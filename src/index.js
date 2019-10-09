@@ -1,7 +1,6 @@
-import {
-  createBottomTabNavigator
-} from "react-navigation";
+import {createBottomTabNavigator} from "react-navigation-tabs";
 import Campeoes from './pages/Campeoes/Campeoes';
+import { createAppContainer } from "react-navigation";
 
 const MainNav = createBottomTabNavigator(
   {
@@ -25,3 +24,5 @@ const MainNav = createBottomTabNavigator(
     }
   }
 );
+
+export default createAppContainer(MainNav);
