@@ -7,6 +7,13 @@ const TabNavigator = createBottomTabNavigator(
     {
         Campeoes,
         Developer
+    },
+    {
+        tabBarOptions: {
+            showLabel: false,
+            inactiveBackgroundColor: "#262626",
+            activeBackgroundColor: "#171717"
+        }
     }
 );
 
